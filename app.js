@@ -75,6 +75,10 @@ app.get("/creation", (req, res) => {
     // })
 })
 
+app.get("/story", (req, res) => {
+    res.render("story")
+})
+
 app.get("/create/:head/:torso/:right_arm/:left_arm/:right_leg/:left_leg", (req, res) => {
     res.render("/create/")
 })
